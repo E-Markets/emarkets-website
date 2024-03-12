@@ -250,7 +250,7 @@ body {
 }
 .services .graph::before {
   content: "";
-  background-image: url(../images/mount.jpeg);
+  background-image: url(../images/app.jpg);
   position: absolute;
   width: 200%;
   height: 80%;
