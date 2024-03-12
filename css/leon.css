@@ -179,7 +179,7 @@ body {
 }
 .features .container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
   gap: 20px;
 }
 .features .feat {
@@ -470,7 +470,7 @@ footer {
   align-items: center;
   font-size: 10px;
 }
-.leon {
+.emarkets {
   color: var(--main-color);
 }
 /* End Footer */
