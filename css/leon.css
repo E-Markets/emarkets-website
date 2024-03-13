@@ -346,7 +346,7 @@ body {
   height: calc(100% + 100px);
   position: absolute;
   width: 25%;
-  background-color: #fafafa;
+  background-color: var(--secondary-color);
   top: -50px;
   left: 20%;
   z-index: -1;
