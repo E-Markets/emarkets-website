@@ -5,8 +5,8 @@
   --secondary-color: #1D2B4D;
   /* --secondary-color: #2c4755; */
   --main-section-padding: 60px;
-  --main-section-color: #FFC107;
-  /* --main-section-color: #f6f6f6; */
+  /* --main-section-color: #FFC107; */
+  --main-section-color: #f6f6f6;
   --duration: 300ms;
 }
 * {
