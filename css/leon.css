@@ -63,7 +63,7 @@ body {
   margin: 0;
   font-size: 20px;
   text-align: center;
-  color: #000000;
+  color: #797979;
 }
 @media (max-width: 767px) {
   .special-headings {
@@ -164,7 +164,7 @@ body {
 }
 .landing .intro-text {
   position: absolute;
-  top: 25%;
+  top: 35%;
   left: 50%;
   text-align: center;
   transform: translate(-50%, -50%);
