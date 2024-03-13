@@ -1,9 +1,12 @@
 /* Start global rules */
 :root {
-  --main-color: #10cab7;
-  --secondary-color: #2c4755;
+  --main-color: #3051A3;
+  /* --main-color: #10cab7; */
+  --secondary-color: #1D2B4D;
+  /* --secondary-color: #2c4755; */
   --main-section-padding: 60px;
-  --main-section-color: #f6f6f6;
+  --main-section-color: #FFC107;
+  /* --main-section-color: #f6f6f6; */
   --duration: 300ms;
 }
 * {
@@ -270,7 +273,7 @@ body {
 .portfolio .projects {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 30px;
+  gap: 90px;
   margin-top: 150px;
 }
 @media (max-width: 767px) {
