@@ -21,6 +21,9 @@ html {
 body {
   font-family: "Work Sans", sans-serif;
 }
+img {
+  border-radius: 10px;
+}
 .parent {
   background-color: #eee;
 }
@@ -156,7 +159,6 @@ body {
   height: calc(100vh - 64px);
   background-image: url(../images/ship.jpg);
   background-size: cover;
-  /* margin-bottom: 100; */
   position: relative;
 }
 .landing .logo {
@@ -259,6 +261,7 @@ body {
 .services .graph::before {
   content: "";
   background-image: url(../images/app.jpg);
+  border-radius: 10px;
   position: absolute;
   width: 200%;
   height: 80%;
@@ -479,6 +482,6 @@ footer {
   font-size: 10px;
 }
 .emarkets {
-  color: var(--main-color);
+  color: var(--accent-color);
 }
 /* End Footer */
