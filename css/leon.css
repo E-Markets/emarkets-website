@@ -447,14 +447,13 @@ img {
 .contact .section-body a {
   color: var(--main-color);
   margin: 15px 20px;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 800;
   letter-spacing: -1px;
   text-decoration: none;
-  /* cursor: pointer; */
 }
 .contact .section-body .social {
-  margin: 15px 10px;
+  margin: 15px 0px;
 }
 .contact .section-body .contacts {
   display: flex;
