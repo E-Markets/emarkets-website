@@ -71,6 +71,7 @@ img {
 @media (max-width: 767px) {
   .special-headings {
     font-size: 60px;
+    margin-bottom: 15px;
   }
   .special-headings + p {
     margin-top: -20px;
@@ -294,6 +295,9 @@ img {
 .portfolio .projects .col {
   background-color: white;
 }
+.portfolio .projects .col:hover {
+  background-color: red;
+}
 .portfolio .projects .col .texts {
   padding: 20px;
 }
@@ -449,6 +453,9 @@ img {
   text-decoration: none;
   /* cursor: pointer; */
 }
+.contact .section-body .social {
+  margin: 15px 10px;
+}
 .contact .section-body .contacts {
   display: flex;
   align-items: center;
@@ -467,7 +474,7 @@ img {
 }
 .contact .section-body .contacts p {
   color: var(--secondary-color);
-  font-size: 10px;
+  font-size: 20px;
 }
 .contact .section-body .contacts i {
   margin-left: 20px;
