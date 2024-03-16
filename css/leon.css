@@ -80,7 +80,10 @@ img {
 /* End components */
 /* Start Header */
 .header {
-  padding: 20px;
+  position: fixed;
+  z-index: 1000; 
+  background-color: #fff;
+  width: 100%;
 }
 .header .container {
   display: flex;
@@ -89,9 +92,44 @@ img {
 }
 .header .logo {
   width: 60px;
+  margin: 30px 10px;
+}
+.header .header-links {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: stretch;
+}
+@media (max-width: 1200px) {
+  .header .header-links {
+    display: none;
+  }
+}
+.header .header-links p{
+  padding: 30px 10px;
+}
+.header .header-links a{
+  font-size: 1.5em;
+  font-weight: 600;
+  /* margin: 10px; */
+  color: var(--main-color);
+  text-decoration: none;
+}
+.header .header-links a:visited {
+  color: var(--main-color);
+}
+.header .header-links p:hover{
+  text-decoration: underline;
+  /* font-size: 1.1em; */
+  /* font-weight: 800; */
 }
 .header .links {
   position: relative;
+}
+@media (min-width: 1200px) {
+  .header .links {
+    display: none;
+  }
 }
 .header .links:hover .icon span:nth-child(2) {
   width: 100%;
@@ -161,6 +199,7 @@ img {
   background-image: url(../images/ship.jpg);
   background-size: cover;
   position: relative;
+  background-position: center;
 }
 .landing .logo {
   width: 160px;
@@ -296,7 +335,7 @@ img {
   background-color: white;
 }
 .portfolio .projects .col:hover {
-  background-color: red;
+  margin-top: 20px;
 }
 .portfolio .projects .col .texts {
   padding: 20px;
