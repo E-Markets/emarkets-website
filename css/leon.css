@@ -223,6 +223,7 @@ img {
 .services .serv {
   display: flex;
   margin-bottom: 40px;
+  height: 50%;
 }
 @media (max-width: 767px) {
   .services .serv {
@@ -257,6 +258,7 @@ img {
   position: relative;
   top: -15%;
   right: -60%;
+  border-radius: 10px;
 }
 .services .graph::before {
   content: "";
@@ -361,6 +363,7 @@ img {
   top: -50px;
   left: 20%;
   z-index: -1;
+  border-radius: 10px;
 }
 
 .about .content .shapes::after {
@@ -374,6 +377,7 @@ img {
   z-index: -1;
   border-left: 90px solid var(--main-color);
   border-bottom: 90px solid var(--main-color);
+  border-radius: 10px;
 }
 @media (max-width: 991px) {
   .about .content .shapes::before,
