@@ -109,7 +109,7 @@ img {
   flex-grow: 1;
   flex-basis: auto;
 }
-@media (max-width: 1200px) {
+@media (max-width: 992px) {
   .header .header-links {
     display: none;
   }
@@ -118,7 +118,7 @@ img {
   padding: 30px 10px;
 }
 .header .header-links a{
-  font-size: 1.5em;
+  font-size: 1.0em;
   font-weight: 600;
   /* margin: 10px; */
   color: var(--main-color);
@@ -135,7 +135,7 @@ img {
 .header .links {
   position: relative;
 }
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .header .links {
     display: none;
   }
