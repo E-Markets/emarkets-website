@@ -555,7 +555,7 @@ footer {
 }
 
 .whatsapp-icon i {
-  font-size: 3.2em;
+  
   color: #fff;
 }
 
@@ -567,6 +567,7 @@ footer {
 /* For larger screens, hide the mobile link and show the desktop link */
 @media (min-width: 768px) {
   .whatsapp-desktop {
+    font-size: 3.2em;
     display: block;
   }
   .whatsapp-mobile {
@@ -581,7 +582,7 @@ footer {
   }
   .whatsapp-mobile {
     display: block;
-    font-size: 1.0em;
+    font-size: 1.2em;
   }
   .whatsapp-icon {
     bottom: 50px; /* Adjust the distance from the bottom */
