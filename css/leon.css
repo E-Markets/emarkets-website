@@ -581,7 +581,11 @@ footer {
   }
   .whatsapp-mobile {
     display: block;
-    font-size: 1.2em;
+    font-size: 1.0em;
+  }
+  .whatsapp-icon {
+    bottom: 50px; /* Adjust the distance from the bottom */
+    right: 30px; /* Adjust the distance from the right */
   }
 }
 
