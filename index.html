@@ -19,6 +19,7 @@
       rel="stylesheet"
     />
     <link rel="icon" href="images/logo.png" type="image/x-icon" />
+    <script src="script/index.js"></script>
   </head>
   <body>
     <!-- Start Header -->
@@ -55,10 +56,20 @@
     <!-- End Header -->
     <!-- Start Landing Section -->
     <div class="landing">
-      <div class="intro-text">
+      <!-- <div class="intro-text">
         <img src="images/logo.png" alt="E-markets" class="logo" />
         <h1>Welcome to E-Markets</h1>
         <p>Trade Safely and Easily</p>
+      </div> -->
+      <div class="slider">
+        <div class="slides">
+          <img src="images/ship.jpg" style="width: 100%" class="slide slide1" />
+          <img src="images/01.webp" style="width: 100%" class="slide" />
+          <img src="images/02.webp" style="width: 100%" class="slide" />
+          <!-- Add more images as needed -->
+        </div>
+        <button class="btn prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="btn next" onclick="moveSlide(1)">&#10095;</button>
       </div>
     </div>
     <!-- End Landing Section -->
@@ -249,7 +260,7 @@
     <div class="contact" id="contact">
       <div class="container">
         <h2 class="special-headings">Contact</h2>
-        <p>Connect With Us for Services, Support, and More</p>
+        <p class="desc">Connect With Us for Services, Support, and More</p>
         <div class="section-body">
           <h2>Feel free to drop us a line at:</h2>
           <!-- <h3>ahmeed.elbaz@gmail.com</h3> -->
@@ -277,7 +288,7 @@
               <i class="fa-brands fa-youtube"></i>
             </a>
           </div>
-          <a href="https://maps.app.goo.gl/5Ck5bi9nKmUcmWEj6"
+          <a class="address" href="https://maps.app.goo.gl/5Ck5bi9nKmUcmWEj6"
             ><i class="fa-solid fa-map-marker-alt"></i> 45 Qambiz st, infront of
             shooting club gate -Dokki- Giza, Egypt
           </a>
