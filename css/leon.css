@@ -80,7 +80,8 @@ img {
 /* End components */
 /* Start Header */
 .header {
-  position: fixed;
+  position: sticky;
+  top: 0;
   z-index: 1000; 
   background-color: #fff;
   width: 100%;
@@ -92,7 +93,7 @@ img {
 }
 .header .logo {
   width: 60px;
-  margin: 30px 10px;
+  margin: 20px 10px;
 }
 .header .header-links {
   display: flex;
