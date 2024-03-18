@@ -406,6 +406,7 @@ img {
   padding-top: var(--main-section-padding);
   padding-bottom: calc(var(--main-section-padding) + 100px);
   position: relative;
+  color: black;
 }
 .portfolio .projects {
   display: grid;
@@ -435,12 +436,15 @@ img {
 .portfolio .projects h3 {
   font-weight: 800;
   margin: 0;
+  color: black;
+  text-decoration: none;
 }
 .portfolio .projects p {
   line-height: 1.8;
   font-size: 17px;
   color: #777;
   margin-bottom: 0;
+  text-decoration: none;
 }
 .portfolio button {
   padding: 20px;
