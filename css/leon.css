@@ -632,7 +632,8 @@ footer {
 }
 /* End Footer */
 /* Whatsapp floatin icon */
-.whatsapp-icon {
+.whatsapp-icon i {
+  color: #fff;
   position: fixed;
   bottom: 70px; /* Adjust the distance from the bottom */
   right: 50px; /* Adjust the distance from the right */
@@ -640,11 +641,6 @@ footer {
   background-color: green;
   padding: 10px;
   border-radius: 50%;
-}
-
-.whatsapp-icon i {
-  
-  color: #fff;
 }
 
 /* Initially hide mobile link */
