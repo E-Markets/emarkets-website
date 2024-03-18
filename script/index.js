@@ -6,18 +6,21 @@ function moveSlide(n) {
 }
 
 function showSlide(n) {
-  let i;
-  let slides = document
-    .getElementsByClassName("slides")[0]
-    .getElementsByTagName("img");
+  let slides = document.querySelectorAll(".slides img");
   if (n > slides.length) {
     slideIndex = 1;
   }
   if (n < 1) {
     slideIndex = slides.length;
   }
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slides[slideIndex - 1].style.display = "block";
+  // First, remove the active class from all slides
+  slides.forEach((slide) => {
+    slide.classList.remove("active");
+  });
+  // Then, add the active class to the current slide
+  slides[slideIndex - 1].classList.add("active");
 }
+
+setInterval(function () {
+  moveSlide(1);
+}, 3000); // Change slide every 3 seconds
