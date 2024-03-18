@@ -1,26 +1,40 @@
-let slideIndex = 1;
-showSlide(slideIndex);
+let slideIndex = 0; // Initialize slideIndex
+let slideInterval; // Declare slideInterval at the top
 
-function moveSlide(n) {
-  showSlide((slideIndex += n));
-}
-
-function showSlide(n) {
+function showSlide() {
   let slides = document.querySelectorAll(".slides img");
-  if (n > slides.length) {
-    slideIndex = 1;
+  // Adjust the index if it's out of the slides' range
+  if (slideIndex >= slides.length) {
+    slideIndex = 0;
   }
-  if (n < 1) {
-    slideIndex = slides.length;
+  if (slideIndex < 0) {
+    slideIndex = slides.length - 1;
   }
-  // First, remove the active class from all slides
+
+  // Hide all slides and then show the active one
   slides.forEach((slide) => {
     slide.classList.remove("active");
   });
-  // Then, add the active class to the current slide
-  slides[slideIndex - 1].classList.add("active");
+  slides[slideIndex].classList.add("active");
 }
 
-setInterval(function () {
-  moveSlide(1);
-}, 3000); // Change slide every 3 seconds
+// Initialize the slideshow automatically
+showSlide();
+
+// Function to move to the next or previous slide
+function moveSlide(n) {
+  slideIndex += n;
+  clearInterval(slideInterval); // Clear the existing interval
+  showSlide();
+  startSlideShow(); // Restart the slideshow
+}
+
+// Function to start the slideshow
+function startSlideShow() {
+  slideInterval = setInterval(() => {
+    slideIndex++;
+    showSlide();
+  }, 5000); // Adjust time as needed
+}
+
+startSlideShow(); // Start the slideshow
