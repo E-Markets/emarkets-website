@@ -406,9 +406,9 @@ img {
   background-color: white;
   transition: all 100ms ease-in;
   border-radius: 20px;
+  position: relative;
 }
 .portfolio .projects .col:hover {
-  /* padding-inline-start: 20px; */
   box-shadow: 14px 15px 11px 5px #ddd;
 }
 .portfolio .projects .col .texts {
@@ -418,6 +418,11 @@ img {
   width: 100%;
   height: 220px;
   background-size: cover;
+}
+@media (max-width: 767px){
+  .portfolio .projects img{
+    height: fit-content;
+  }
 }
 .portfolio .projects h3 {
   font-weight: 800;
@@ -433,22 +438,23 @@ img {
   text-decoration: none;
 }
 .portfolio button {
+  width: 150px;
+  position: absolute;
+  bottom: -75px;
   padding: 20px;
   font-weight: 800;
-  position: absolute;
-  bottom: 75px;
   left: 50%;
   transform: translateX(-50%);
   cursor: pointer;
 }
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
   .portfolio button {
     padding: 10px;
     margin-top: 60px;
     font-size: 10px;
     bottom: 100px;
   }
-}
+} */
 /* End Portfolio */
 /* Start About Section */
 .about {
