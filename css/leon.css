@@ -120,6 +120,7 @@ img {
 }
 .header .header-links p{
   padding: 30px 10px;
+  transition: all 100ms ease-out;
 }
 .header .header-links a{
   font-size: 1.0em;
@@ -133,6 +134,7 @@ img {
 }
 .header .header-links p:hover{
   text-decoration: underline;
+  transform: scale(1.05);
   /* font-size: 1.1em; */
   /* font-weight: 800; */
 }
