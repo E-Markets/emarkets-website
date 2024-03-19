@@ -101,6 +101,7 @@ i:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 .header .logo {
   width: 60px;
@@ -202,6 +203,20 @@ i:hover {
 }
 .header .links ul li:not(:last-child) a {
   border-bottom: solid 1px #ddd;
+}
+.header .container .ramadan {
+  position: fixed;
+  top: 0%;
+  right: 0%;
+  transform: rotateY(180deg);
+  z-index: -1;
+}
+.ramadan img {
+  background-color: transparent;
+  background-size: cover;
+  box-shadow: none;
+  width: 70%;
+  /* height: 100px; */
 }
 /* End Header */
 /* Start Landing Section */
