@@ -390,11 +390,6 @@ img {
   gap: 90px;
   margin-top: 150px;
 }
-@media (max-width: 767px) {
-  .portfolio .projects {
-    text-align: center;
-  }
-}
 .portfolio .projects .col {
   background-color: white;
   transition: all 100ms ease-in;
@@ -403,6 +398,7 @@ img {
 }
 .portfolio .projects .col:hover {
   box-shadow: 14px 15px 11px 5px #ddd;
+  transform: scale(1.05);
 }
 .portfolio .projects .col .texts {
   padding: 20px;
@@ -411,11 +407,6 @@ img {
   width: 100%;
   height: 220px;
   background-size: cover;
-}
-@media (max-width: 767px){
-  .portfolio .projects img{
-    height: fit-content;
-  }
 }
 .portfolio .projects h3 {
   font-weight: 800;
@@ -443,14 +434,18 @@ img {
   transform: translateX(-50%);
   cursor: pointer;
 }
-/* @media (max-width: 767px) {
-  .portfolio button {
-    padding: 10px;
-    margin-top: 60px;
-    font-size: 10px;
-    bottom: 100px;
+
+@media (max-width: 767px){
+  .portfolio .projects img{
+    height: fit-content;
   }
-} */
+  .portfolio .projects {
+    text-align: center;
+  }
+  .portfolio .projects .col{
+    margin-bottom: 20px;
+  }
+}
 /* End Portfolio */
 /* Start About Section */
 .about {
