@@ -404,9 +404,12 @@ img {
 }
 .portfolio .projects .col {
   background-color: white;
+  transition: all 100ms ease-in;
+  border-radius: 20px;
 }
 .portfolio .projects .col:hover {
-  margin-top: 20px;
+  /* padding-inline-start: 20px; */
+  box-shadow: 14px 15px 11px 5px #ddd;
 }
 .portfolio .projects .col .texts {
   padding: 20px;
