@@ -34,6 +34,10 @@ img {
   margin-right: auto;
   margin: auto;
 }
+.container img {
+  box-shadow: 0px 0px 11px 1px #0000003d;
+
+}
 /* Small */
 @media (min-width: 768px) {
   .container {
