@@ -64,6 +64,7 @@ img {
   font-weight: 800;
   letter-spacing: -3px;
   margin-bottom: 0;
+  text-shadow: 1px 1px 3px #0000003d;
 }
 .special-headings + p {
   margin: 0;
