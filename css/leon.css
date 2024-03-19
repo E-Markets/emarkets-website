@@ -203,14 +203,9 @@ img {
 }
 /* End Header */
 /* Start Landing Section */
-/* .landing { */
-  /* background-image: url(../images/ship.jpg); */
-  /* height: calc(100vh - 64px);
-  background-size: cover;
+.landing {
   position: relative;
-  background-position: center; */
-  /* overflow: hidden; */
-/* } */
+}
 .slider {
   position: relative;
   height: calc(100vh - 64px); /* Same height as the viewport minus the navbar */
@@ -253,22 +248,6 @@ img {
   right:0;
   z-index: 10;
 }
-/* #slide-1 { */
-  /* background-image: url(../images/ship.jpg); */
-/* } */
-/* #slide-2 { */
-  /* background-image: url(../images/01.webp); */
-/* } */
-/* #slide-3 { */
-  /* background-image: url(../images/02.webp); */
-/* } */
-
-/* @keyframes slide {
-  0% { transform: translateX(0); }
-  33% { transform: translateX(-100%); }
-  66% { transform: translateX(-200%); }
-  100% { transform: translateX(-300%); }
-} */
 .slider::after {
   content: "";
   width: 100%;
@@ -293,7 +272,7 @@ img {
 }
 .landing .intro-text {
   position: absolute;
-  top: 35%;
+  top: 50%;
   left: 50%;
   text-align: center;
   transform: translate(-50%, -50%);
