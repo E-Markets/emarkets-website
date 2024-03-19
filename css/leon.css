@@ -36,7 +36,6 @@ img {
 }
 .container img {
   box-shadow: 0px 0px 11px 1px #0000003d;
-
 }
 /* Small */
 @media (min-width: 768px) {
@@ -175,19 +174,9 @@ img {
   background-color: #f6f6f6;
   position: absolute;
   right: 0;
-  top: calc(100% + 15px);
   min-width: 200px;
   display: none;
   z-index: 1;
-}
-.header .links ul::before {
-  content: "";
-  border-width: 10px;
-  border-style: solid;
-  border-color: transparent transparent #f6f6f6 transparent;
-  position: absolute;
-  top: -20px;
-  right: 5px;
 }
 .header .links:hover ul {
   display: initial;
@@ -640,6 +629,7 @@ footer {
   background-color: green;
   padding: 10px;
   border-radius: 50%;
+  box-shadow: 0px 0px 11px 1px #0000003d;
 }
 
 /* Initially hide mobile link */
