@@ -125,25 +125,39 @@ i:hover {
     display: none;
   }
 }
+.header .header-links p::before{
+  content: "";
+  background-color: var(--accent-color);
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%; 
+  height: 100%;
+  z-index: -1;
+  transition: all 300ms ease-in-out;
+  transform: translateY(-100%);
+}
 .header .header-links p{
-  padding: 30px 10px;
-  transition: all 100ms ease-out;
+  padding: 23px 10px;
+  margin : 0;
+  transition: all 100ms ease-in-out;
+  position: relative;
+}
+.header .header-links p:hover:before , .header .header-links p:hover  a{
+   background-color: var(--secondary-color);
+  color: #fff !important;
+  transform: translateY(0%);
 }
 .header .header-links a{
   font-size: 1.0em;
   font-weight: 600;
-  /* margin: 10px; */
+  background-color: transparent !important;
   color: var(--main-color);
   text-decoration: none;
+  transition: all 300ms ease-in-out;
 }
 .header .header-links a:visited {
   color: var(--main-color);
-}
-.header .header-links p:hover{
-  text-decoration: underline;
-  transform: scale(1.05);
-  /* font-size: 1.1em; */
-  /* font-weight: 800; */
 }
 .header .links {
   position: relative;
