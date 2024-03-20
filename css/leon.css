@@ -105,7 +105,6 @@ i:hover {
 }
 .header .logo {
   width: 60px;
-  /* margin: 20px 10px; */
   margin-right: 1rem;
   font-size: 1.25rem;
   line-height: inherit;
@@ -162,7 +161,7 @@ i:hover {
 .header .links {
   position: relative;
 }
-@media (min-width: 992px) {
+@media (min-width: 993px) {
   .header .links {
     display: none;
   }
@@ -220,7 +219,7 @@ i:hover {
 }
 .header .container .ramadan {
   position: fixed;
-  top: 0%;
+  top: 64.63px;
   right: 0%;
   transform: rotateY(180deg);
   z-index: -1;
