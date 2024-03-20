@@ -114,7 +114,7 @@ i:hover {
 }
 .header .header-links {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
   align-items: center;
   flex-grow: 1;
@@ -135,11 +135,11 @@ i:hover {
   height: 100%;
   z-index: -1;
   transition: all 300ms ease-in-out;
-  transform: translateY(-100%);
+  transform: translateY(-110%);
 }
 .header .header-links p{
   padding: 23px 10px;
-  margin : 0;
+  margin : 0 10px 0 0;
   transition: all 100ms ease-in-out;
   position: relative;
 }
