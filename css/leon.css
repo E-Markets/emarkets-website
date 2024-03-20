@@ -127,7 +127,7 @@ i:hover {
 }
 .header .header-links p::before{
   content: "";
-  background-color: var(--accent-color);
+  background-color: var(--secondary-color);
   position: absolute;
   top: 0%;
   left: 0%;
