@@ -588,6 +588,70 @@ i:hover {
 }
 /* End About Section */
 /* Start Plans Section */
+.pricing {
+  padding-top: var(--main-section-padding);
+  padding-bottom: var(--main-section-padding);
+}
+.pricing .plans {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-evenly;
+  border: 3px solid var(--main-color);
+  border-radius: 10px;
+  box-shadow: 0px 0px 11px 1px #0000003d;
+}
+.pricing .col {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+.pricing .plans .col:first-of-type::after{
+  content: "";
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  height: 100%;
+  margin: auto;
+  width: 1px;
+  background-color: var(--main-color);
+}
+.pricing .plans .col:nth-of-type(2)::after{
+  content: "";
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  height: 100%;
+  margin: auto;
+  width: 1px;
+  background-color: var(--main-color);
+}
+.pricing .texts{
+  text-align: center;
+}
+.pricing .texts p{
+  text-align: start;
+}
+.pricing .plans a {
+  align-self: center;
+}
+.pricing button {
+  width: 100%;
+  height: 70px;
+  border-radius: 10px;
+  /* position: absolute; */
+  /* bottom: 50px; */
+  padding: 20px;
+  font-weight: 500;
+  background-color: var(--secondary-color);
+  color: #fff;
+  margin-bottom: 20px;
+  /* left: 50%; */
+  /* transform: translateX(-50%); */
+
+  cursor: pointer;
+}
 /* End Plans Section */
 /* Start Contact Section */
 .contact {
