@@ -219,7 +219,7 @@ i:hover {
 .header .links ul li:not(:last-child) a {
   border-bottom: solid 1px #ddd;
 }
-.header .container .ramadan {
+/* .header .container .ramadan {
   position: fixed;
   top: 64.63px;
   right: 0%;
@@ -231,8 +231,7 @@ i:hover {
   background-size: cover;
   box-shadow: none;
   width: 70%;
-  /* height: 100px; */
-}
+} */
 /* End Header */
 /* Start Landing Section */
 .landing {
