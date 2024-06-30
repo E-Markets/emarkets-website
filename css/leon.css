@@ -170,7 +170,7 @@ i:hover {
   height: 50px;
   position: absolute;
   top: 70%;
-  right: 50px;
+  right: 100px;
   background-color: var(--main-section-color);
   color: var(--secondary-color);
   visibility: hidden;
