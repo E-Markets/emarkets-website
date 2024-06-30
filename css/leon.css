@@ -40,7 +40,7 @@ img {
   box-shadow: 0px 0px 11px 1px var(--shadow-color);
 }
 i {
-  transition: all 100ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 i:hover {
   transform: scale(1.2);
@@ -141,7 +141,7 @@ i:hover {
 .header .header-links p{
   padding: 23px 10px;
   margin : 0 10px 0 0;
-  transition: all 100ms ease-in-out;
+  transition: all 300ms ease-in-out;
   position: relative;
 }
 .header .header-links p:hover:before , .header .header-links p:hover  a{
@@ -166,23 +166,24 @@ i:hover {
 
 .header .header-links .store {
   list-style: none;
-  width: 300px;
-  height: 100px;
+  width: 150px;
+  height: 50px;
   position: absolute;
-  top: -200%;
+  top: 70%;
   right: 50px;
-  background-color: var(--secondary-color);
-  color: #fff;
+  background-color: var(--main-section-color);
+  color: var(--secondary-color);
+  display: none;
   transition: all 300ms ease-in-out;
 }
 .header .header-links .store li  {
   margin-top: 5%;
 }
 .header .header-links .store li a {
-  color: #fff;
+  color: var(--secondary-color);
 }
 .header .header-links .store li a:hover {
-  padding-left: 25px;
+  padding-left: 10px;
 }
 .header .header-links .store-p:hover + .store, .header .header-links .store:hover {
   display: flex;
@@ -242,6 +243,15 @@ i:hover {
 }
 .header .links ul li a:hover {
   padding-left: 25px;
+  /* color: var(--accent-color) !important; */
+}
+.header .links ul li .store-item:hover .header .header-links .store{
+  padding-left: 25px;
+  color: var(--accent-color) !important;
+  display: flex;
+  top: 70%;
+  color: #fff;
+  z-index: 1;
 }
 .header .links ul li:not(:last-child) a {
   border-bottom: solid 1px #ddd;
@@ -464,7 +474,7 @@ i:hover {
 }
 .portfolio .projects .col {
   background-color: white;
-  transition: all 100ms ease-in;
+  transition: all 300ms ease-in;
   border-radius: 20px;
   position: relative;
 }
@@ -643,7 +653,7 @@ i:hover {
   justify-content: space-between;
   position: relative;
   padding: 0 20px;
-  transition: all 100ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 .pricing .col:hover{
   transform: scale(1.1);
